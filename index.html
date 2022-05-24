@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8292082fd5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Working version of https://dribbble.com/shots/14552329--Exploration-Task-Management-Dashboard -->
+    <div class='app'>
+        <main class='project'>
+            <div class='project-info'>
+               
+                <div class="title">
+                    <h1>Task Management</h1>
+                    <img src="img/icons8-pencil-drawing-96.png" alt="">
+                </div>
+                <div id="myBtn" class="ico-btn">
+                    <span class="ico-btn__plus"></span>
+                
+                  </div>
+                
+              
+                <div class="modal" id="myModal">
+                    <div class="modal-content">
+                        <p>Some text in the Modal..</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class='project-tasks'>
+                <div class='project-column'>
+                    <div class='project-column-heading'>
+                        <h2 class='project-column-heading__title'>Task Ready</h2><button
+                            class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--urgent'>Urgent</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Konsep hero title yang menarik</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class="task-own">Göktuğ Karabulut</span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--regular'>Regular</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Icon di section our services</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'>Hasan Bolu</span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--urgent'>Urgent</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Konsep hero title yang menarik</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'>Abdullah Sarıca</span>
+                        </div>
+                    </div>
+                </div>
+                <div class='project-column'>
+                    <div class='project-column-heading'>
+                        <h2 class='project-column-heading__title'>In Progress</h2><button
+                            class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--regular'>Regular</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Replace lorem ipsum text in the final designs</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span
+                                class='task__tag task__tag--Trivial'>Trivial</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Create and generate the custom SVG Trivials.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                          
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--urgent'>Urgent</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Proof read the legal page and check for and loopholes</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span
+                                class='task__tag task__tag--Trivial'>Trivial</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Create the landing page graphics for the hero slider.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class='project-column'>
+                    <div class='project-column-heading'>
+                        <h2 class='project-column-heading__title'>Needs Review</h2><button
+                            class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--urgent'>Urgent</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Check the company we copied doesn't think we copied them.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--regular'>Regular</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Design the about page.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span
+                                class='task__tag task__tag--Trivial'>Trivial</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Move that one image 5px down to make Phil Happy.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+                </div>
+                <div class='project-column'>
+                    <div class='project-column-heading'>
+                        <h2 class='project-column-heading__title'>Done</h2><button
+                            class='project-column-heading__options'><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span
+                                class='task__tag task__tag--Trivial'>Trivial</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Send Advert Trivials over to production company.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span
+                                class='task__tag task__tag--Trivial'>Trivial</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Dawn wants to move the text 3px to the right.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                         
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                    <div class='task' draggable='true'>
+                        <div class='task__tags'><span class='task__tag task__tag--urgent'>Urgent</span><button
+                                class='task__options'><i class="fas fa-ellipsis-h"></i></button></div>
+                        <p>Amend the contract details.</p>
+                        <div class='task__stats'>
+                            <span><time datetime="2021-11-24T20:00:00"><i class="fas fa-flag"></i>Nov 24</time></span>
+                           
+                            <span class='task__own'></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+        
+    </div>
+
+   
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
