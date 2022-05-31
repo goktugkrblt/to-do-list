@@ -72,40 +72,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
 /** Add Task Modal **/
 
-let taskModals = document.querySelectorAll(".modal");
-let modalButtons = document.querySelectorAll(".ico-btn")
-
-editModalButtons = [...modalButtons];
 
 
-editModalButtons.forEach(button => {
+
+let columnModals = document.querySelectorAll(".modal");
+var columnButtons = document.querySelectorAll(".ico-btn");
+
+columnButtons = [...columnButtons];
+
+columnButtons.forEach(button => {
   
   button.addEventListener("click", (element) => {
-      var visibleTaskModal = button.parentElement.querySelector(".edit-modal.visible");
+    var visibleColumnModal = button.parentElement.querySelector(".modal.visible1");
    
-    taskModals.forEach(taskModal =>  taskModal.classList.remove("visible"));
-    button.parentElement.querySelector(".modal").classList.toggle("visible");  
+    dropdownModals.forEach(dropdownModal =>  dropdownModal.classList.remove("visible1"));
+    button.parentElement.querySelector(".modal").classList.toggle("visible1");  
     
-    if(visibleTaskModal.parentElement == button.parentElement){
-      visibleTaskModal.classList.remove("visible"); 
+    if(visibleColumnModal.parentElement == button.parentElement){
+      visibleColumnModal.classList.remove("visible1"); 
     }
   })
-
-modalButtons.addEventListener('click', () => {
-  isMenuOpen = !isMenuOpen;
-  modalButtons.classList.toggle('is-active');
-})
-})
-
-
-document.addEventListener('keydown', function (event) {
-  if (event.key === "Escape") {
-    taskModals.classList.remove("visible");
-  }
 });
-
 
 
 
@@ -127,7 +117,7 @@ editButtons.forEach(button => {
       visibleModal.classList.remove("visible"); 
     }
   })
-})
+});
 
 
 /** */
